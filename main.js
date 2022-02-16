@@ -43,8 +43,7 @@ const getName = s => s.name
 const itMap = (array, callback) => {
     const newArr = []
     for (let i = 0; i < array.length; i++) {
-        const result = callback(array[i])
-        newArr[i] = result
+        newArr[i] = callback(array[i])
     }
     return newArr
 }
